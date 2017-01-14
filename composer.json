@@ -1,0 +1,22 @@
+{
+    "name": "pfinal/sms",
+    "description": "SMS SDK",
+    "license": "MIT",
+    "homepage": "http://www.pfinal.cn",
+    "support": {
+        "source": "https://github.com/pfinal/sms"
+    },
+    "authors": [
+        {
+            "name": "Zou Yiliang"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SMS\\": "src/"
+        }
+    }
+}

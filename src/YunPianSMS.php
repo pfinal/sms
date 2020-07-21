@@ -36,7 +36,7 @@ class YunPianSMS implements SmsVerifyInterface, SmsTemplateInterface
      */
     public function sendCode($phone, $code, &$error = null)
     {
-        return $this->sendMessage($phone, View::renderText($this->template, ['code' => "$code"]), $error);
+        return $this->sendMessage($phone, View::renderText($this->template, array('code' => "$code")), $error);
     }
 
     public function templateSMS($phone, $templateId = null, $params = array(), &$error = null)

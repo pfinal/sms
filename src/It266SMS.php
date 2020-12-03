@@ -16,7 +16,7 @@ class It266SMS implements SmsVerifyInterface, SmsTemplateInterface
         $res = $client->post($this->gateway . '/api/sms/send/verify', array('mobile' => $phone, 'code' => $code, 'app_id' => $this->appId, 'sign' => $this->getSign()));
 
         if ($res->getStatusCode() != 200) {
-            $error = 'http error ' . $res->getStatusCode();
+            $error = 'http error ' . $res->getStatusCode() . " " . $res->getBody();
             return false;
         }
 

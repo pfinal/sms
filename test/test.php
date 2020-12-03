@@ -29,7 +29,7 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 //}
 
 //
-//$sms = new \SMS\It266Sms();
+//$sms = new \SMS\It266SMS();
 //$sms->gateway = 'http://api.it266.com';
 //$sms->appId = '2345678';
 //$sms->appSecret = 'c9234567813';

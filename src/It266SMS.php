@@ -4,7 +4,7 @@ namespace SMS;
 
 use PFinal\Http\Client;
 
-class It266Sms implements SmsVerifyInterface, SmsTemplateInterface
+class It266SMS implements SmsVerifyInterface, SmsTemplateInterface
 {
     public $gateway;
     public $appId;

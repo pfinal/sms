@@ -24,7 +24,7 @@ class QiXunTongSMS implements SmsTemplateInterface
         $content = $params['content'];
 
         //短信内容，手机限70字，小灵通限54字，超长系统自动拆分
-        $content = $content . " 退订回N【" . $this->signName . "】" . $content;
+        $content = $content . " 退订回N【" . $this->signName . "】";
 
         $res = $this->sendMessage($this->username, $this->password, $phone, $content);
 
